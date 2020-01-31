@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AReperable : MonoBehaviour
+public enum ReperableStatus
 {
-    public enum ReperableStatus
-    {
-        Broken, Repair, Use
-    };
+    Broken, Repair, Use
+};
 
+public class ARepairable : MonoBehaviour
+{
     public float repairTime;
     public ReperableStatus status = ReperableStatus.Broken;
 
@@ -26,7 +26,9 @@ public class AReperable : MonoBehaviour
     void Repair(float value)
     {
         if (status == ReperableStatus.Broken)
+        {
             status = ReperableStatus.Use;
+        }
         repairTime -= value;
         if (repairTime <= 0)
             status = ReperableStatus.Repair;
