@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class EnemyBehavior : AEntity
 {
-    public float speed = 0.1f;
     private Transform target;
 
     // Start is called before the first frame update
     void Start()
     {
+        _life = 3f;
+        _speed = 0.05f;
+        _damage = 2f;
+        _range = 2f;
     }
 
     // Update is called once per frame
     void Update()
     {
         target = GameObject.Find("Square").transform;
-        transform.position = Vector3.MoveTowards(transform.position, target.position, speed);
+        transform.position = Vector3.MoveTowards(transform.position, target.position, _speed);
     }
 }
