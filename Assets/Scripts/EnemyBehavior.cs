@@ -18,7 +18,7 @@ public class EnemyBehavior : AEntity
     // Update is called once per frame
     void Update()
     {
-        target = GameObject.Find("Square").transform;
+        target = GameObject.FindGameObjectWithTag("Player").transform;
         transform.position = Vector3.MoveTowards(transform.position, target.position, _speed);
     }
 }
