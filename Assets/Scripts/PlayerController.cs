@@ -11,6 +11,7 @@ public class PlayerController : AEntity
         Movements();
     }
 
+    // Handles movements from the player.
     private void Movements()
     {
 
