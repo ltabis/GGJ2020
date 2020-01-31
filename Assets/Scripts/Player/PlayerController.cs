@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class PlayerController : AEntity
 {
+    private void Start()
+    {
+        _life = 100;
+        _damage = 0;
+        _range = 5;
+        _speed = 5;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -14,7 +22,7 @@ public class PlayerController : AEntity
     // Handles movements from the player.
     private void Movements()
     {
-
+        transform.position += new Vector3(Input.GetAxis("Horizontal") * Speed() * Time.deltaTime, Input.GetAxis("Vertical") * Speed() * Time.deltaTime, 0);
     }
 
     // Rotate the object, following the mouse cursor.
