@@ -22,9 +22,8 @@ public class TrapBehaviour : ARepairable
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("collision");
-        if (status == ReperableStatus.Repair)
+        if (status == ReperableStatus.Using)
         {
-            Debug.Log(other.gameObject.name);
             activated = true;
         }
     }

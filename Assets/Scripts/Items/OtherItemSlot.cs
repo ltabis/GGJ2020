@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class OtherItemSlot : MonoBehaviour
 {
-    // Inventory.
-    public Inventory inventory;
-
     // UI.
     public Button buttonUI;
     public Image slotUI;
@@ -17,16 +14,9 @@ public class OtherItemSlot : MonoBehaviour
 
     private void Start()
     {
-        // Setting a callback for the player.
-        buttonUI.onClick.AddListener(TransferItem);
-
         // The slot is empty, toggle off everything.
         if (!set)
             ToggleGUI(false);
-    }
-    private void TransferItem()
-    {
-        // ToggleGUI(false);
     }
 
     // Toggle the UI on and off.

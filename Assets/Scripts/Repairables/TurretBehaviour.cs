@@ -17,7 +17,7 @@ public class TurretBehaviour : ARepairable
     // Update is called once per frame
     void Update()
     {
-        if (status == ReperableStatus.Repair)
+        if (status == ReperableStatus.Using)
         {
             GameObject target = FindNearestEnnemy();
             if (target != null)
