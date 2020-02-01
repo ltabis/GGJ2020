@@ -6,7 +6,14 @@ public class PlayerController : AEntity
 {
     // Inventory.
     public Inventory inventory;
-    private Inventory otherInventory = null;
+    private OtherInventory otherInventory = null;
+    private bool _isInventoryOpen = false;
+
+    // Parent of slots
+    public GameObject itemsParent;
+
+    // All item slots.
+    private ItemSlot[] ItemSlotsUI;
 
     // Object detection.
     Ray ray;
@@ -18,14 +25,20 @@ public class PlayerController : AEntity
         _damage = 0;
         _range = 5;
         _speed = 5;
+
+        ItemSlotsUI = itemsParent.GetComponentsInChildren<ItemSlot>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        RotateEntityWithMouse();
-        Movements();
+        if (!_isInventoryOpen)
+        {
+            RotateEntityWithMouse();
+            Movements();
+        }
         Interactions();
+        PlayerInput();
     }
 
     // Handles movements from the player.
@@ -64,7 +77,7 @@ public class PlayerController : AEntity
         return null;
     }
 
-    public void Interactions()
+    private void Interactions()
     {
         // Getting an eventual object.
         var collider = ObjectOver();
@@ -75,7 +88,7 @@ public class PlayerController : AEntity
         }
         else if (collider)
         {
-            var tmpInventory = collider.GetComponentInChildren<Inventory>();
+            var tmpInventory = collider.GetComponentInChildren<OtherInventory>();
 
             if (tmpInventory != null)
             {
@@ -87,5 +100,23 @@ public class PlayerController : AEntity
         }
         else if (otherInventory != null)
             otherInventory.ToggleInventory(false);
+    }
+
+    private void DisplayInventory()
+    {
+        // Changing the state of the inventory.
+        _isInventoryOpen = !_isInventoryOpen;
+        inventory.ToggleInventory(_isInventoryOpen);
+    }
+
+    private void PlayerInput()
+    {
+        if (Input.GetButtonDown("Inventory"))
+        {
+            DisplayInventory();
+        }
+        if (Input.GetButtonDown("Use"))
+        {
+        }
     }
 }

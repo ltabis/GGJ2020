@@ -18,6 +18,7 @@ public class Item : ScriptableObject
     public Rarity rarity = Rarity.Useless;
     public float price = 0;
     public uint id = 0;
+    public uint maxQuantity = 9999;
 
     // UI.
     public Sprite artwork;

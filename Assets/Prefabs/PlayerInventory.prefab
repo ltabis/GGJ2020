@@ -176,7 +176,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Inventory
 --- !u!1 &6665234706949071327
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 6665234706949071297}
   - component: {fileID: 6665234706949071326}
   m_Layer: 0
-  m_Name: Inventory
+  m_Name: PlayerInventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -269,8 +269,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -244.5, y: -265.27}
-  m_SizeDelta: {x: -1026.43, y: -550.54}
+  m_AnchoredPosition: {x: 503.22, y: -126.41501}
+  m_SizeDelta: {x: -1026.43, y: -547.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3412148410741101958
 CanvasRenderer:
@@ -359,11 +359,11 @@ RectTransform:
   m_Father: {fileID: 4491551904228871707}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 10, y: 10}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -10, y: 10}
   m_SizeDelta: {x: 253.37, y: 126.34}
-  m_Pivot: {x: 0, y: 0}
+  m_Pivot: {x: 1, y: 0}
 --- !u!222 &2903572531517007082
 CanvasRenderer:
   m_ObjectHideFlags: 0

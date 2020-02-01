@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,18 +8,10 @@ public class Inventory : MonoBehaviour
     // UI.
     public Canvas canvas;
 
-    // Public.
-    public List<Item> prefabList;
-
     // Private.
     protected string _name = "Inventory";
     protected uint _fixedSize = 0;
-    protected List<Item> _content;
-
-    private void Start()
-    {
-        Generate();
-    }
+    protected List<Tuple<Item, uint>> _content = new List<Tuple<Item, uint>>();
 
     // Set the inventory visible or not.
     public void ToggleInventory(bool toggle)
@@ -27,14 +20,14 @@ public class Inventory : MonoBehaviour
     }
 
     // Take an item from the current inventory
-    public Item Take(string toFind)
+    public Tuple<Item, uint> Take(string toFind)
     {
 
         // Searching for the item.
         foreach (var item in _content)
         {
             // Found the item, getting it.
-            if (item.name == toFind)
+            if (item.Item1.name == toFind)
             {
                 // Removing the item from the inventory list.
                 var itemCpy = item;
@@ -55,29 +48,34 @@ public class Inventory : MonoBehaviour
         foreach (var item in _content)
         {
             // Found the item, getting it.
-            if (item.name == toFind)
+            if (item.Item1.name == toFind)
                 _content.Remove(item);
         }
     }
 
     // Adds an item to the inventory.
-    public void Add(Item item)
+    public void Add(Item newItem, uint quantity)
     {
-        _content.Add(item);
-    }
+        int idx = 0;
 
-    // Generates a random set of items.
-    public void Generate()
-    {
-        uint itemsToGenerate = (uint)Random.Range(0, _fixedSize);
-
-        // Generate as much items as the random suggest.
-        for (uint item = 0; item < itemsToGenerate; ++item)
+        foreach (var item in _content)
         {
-            // Generates a random item. (Needs to add item tier list rate)
-            int prefabIndex = Random.Range(0, prefabList.Count);
 
-            _content.Add(prefabList[prefabIndex]);
+            // Search if the inventory already contains the item.
+            if (item.Item1.name == newItem.name)
+            {
+
+                // Add quantity.
+                _content[idx] = new Tuple<Item, uint>(item.Item1, item.Item2 + quantity);
+                return;
+            }
+            ++idx;
         }
+
+        // Add a new item to the inventory?
+        if (_content.Count < _fixedSize)
+            _content.Add(new Tuple<Item, uint>(newItem, quantity));
+        else
+            Debug.Log("Inventory is full.");
     }
 }
