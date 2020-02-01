@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Instant Noodles
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  description: Cheap. But stronk.
+  description: Cheap. But stronk
   rarity: 3
   price: 1000
   id: 10
