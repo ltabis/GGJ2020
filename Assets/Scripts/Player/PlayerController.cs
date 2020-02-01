@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class PlayerController : AEntity
 {
+    // Inventory.
+    public Inventory inventory;
+    private Inventory otherInventory = null;
+
+    // Object detection.
+    Ray ray;
+    RaycastHit hit;
+
     private void Start()
     {
         _life = 100;
@@ -17,6 +25,7 @@ public class PlayerController : AEntity
     {
         RotateEntityWithMouse();
         Movements();
+        Interactions();
     }
 
     // Handles movements from the player.
@@ -39,5 +48,44 @@ public class PlayerController : AEntity
 
         // Applying rotation to the object.
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+    }
+
+    // Mouse over objects.
+    private Collider ObjectOver()
+    {
+        // Get the current mouse position.
+        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            return hit.collider;
+        }
+
+        return null;
+    }
+
+    public void Interactions()
+    {
+        // Getting an eventual object.
+        var collider = ObjectOver();
+
+        if (Input.GetButton("Use") == true && collider)
+        {
+            Debug.Log("Using " + collider.name);
+        }
+        else if (collider)
+        {
+            var tmpInventory = collider.GetComponentInChildren<Inventory>();
+
+            if (tmpInventory != null)
+            {
+                if (otherInventory != null)
+                    otherInventory.ToggleInventory(false);
+                otherInventory = tmpInventory;
+                otherInventory.ToggleInventory(true);
+            }
+        }
+        else if (otherInventory != null)
+            otherInventory.ToggleInventory(false);
     }
 }

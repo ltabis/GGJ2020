@@ -1,184 +1,184 @@
 fileFormatVersion: 2
-guid: 2d31530ffc2804e45a17f5442642bf72
+guid: 19f99dea6b8bb0444aa3b1e69cf89e69
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3025866356083200111
-    second: Small_Fireball_10x26_0
+      213: -6544398390911708164
+    second: Small_Fireball_10x27_0
   - first:
-      213: 5471406000359973772
-    second: Small_Fireball_10x26_1
+      213: -8323607618048971748
+    second: Small_Fireball_10x27_1
   - first:
-      213: 6881842568346245446
-    second: Small_Fireball_10x26_2
+      213: 2587783794285979317
+    second: Small_Fireball_10x27_2
   - first:
-      213: 1324093072650019323
-    second: Small_Fireball_10x26_3
+      213: 6711293579688274378
+    second: Small_Fireball_10x27_3
   - first:
-      213: -4223788405454877970
-    second: Small_Fireball_10x26_4
+      213: -649492720449077127
+    second: Small_Fireball_10x27_4
   - first:
-      213: 1723776980114431751
-    second: Small_Fireball_10x26_5
+      213: 2806016066016736911
+    second: Small_Fireball_10x27_5
   - first:
-      213: 8730858024399026206
-    second: Small_Fireball_10x26_6
+      213: 3949506832523104023
+    second: Small_Fireball_10x27_6
   - first:
-      213: 4724932671483771067
-    second: Small_Fireball_10x26_7
+      213: 6638174607297839549
+    second: Small_Fireball_10x27_7
   - first:
-      213: 9012657011610590324
-    second: Small_Fireball_10x26_8
+      213: -7767958621520958957
+    second: Small_Fireball_10x27_8
   - first:
-      213: 4414077819895014238
-    second: Small_Fireball_10x26_9
+      213: 6067822975881311255
+    second: Small_Fireball_10x27_9
   - first:
-      213: 7887931997134452911
-    second: Small_Fireball_10x26_10
+      213: 6344904709181014935
+    second: Small_Fireball_10x27_10
   - first:
-      213: -2457861531371117489
-    second: Small_Fireball_10x26_11
+      213: -4234239302498444236
+    second: Small_Fireball_10x27_11
   - first:
-      213: -6840141169803045257
-    second: Small_Fireball_10x26_12
+      213: -3304420875831748562
+    second: Small_Fireball_10x27_12
   - first:
-      213: -7876419421491588294
-    second: Small_Fireball_10x26_13
+      213: 1234640739946939864
+    second: Small_Fireball_10x27_13
   - first:
-      213: -4195092705338621234
-    second: Small_Fireball_10x26_14
+      213: -2937558581589330131
+    second: Small_Fireball_10x27_14
   - first:
-      213: 6567071039009473625
-    second: Small_Fireball_10x26_15
+      213: -1454985291071660353
+    second: Small_Fireball_10x27_15
   - first:
-      213: -4421408385615612123
-    second: Small_Fireball_10x26_16
+      213: 6346145672741885844
+    second: Small_Fireball_10x27_16
   - first:
-      213: -6399340546190279346
-    second: Small_Fireball_10x26_17
+      213: 5323755766352198103
+    second: Small_Fireball_10x27_17
   - first:
-      213: -144872626697716787
-    second: Small_Fireball_10x26_18
+      213: -4671200910471399308
+    second: Small_Fireball_10x27_18
   - first:
-      213: 6779828537082417372
-    second: Small_Fireball_10x26_19
+      213: 4113693959564509723
+    second: Small_Fireball_10x27_19
   - first:
-      213: 5071723896510065527
-    second: Small_Fireball_10x26_20
+      213: -2997518450170068389
+    second: Small_Fireball_10x27_20
   - first:
-      213: -466561126682317933
-    second: Small_Fireball_10x26_21
+      213: -4574923866347631901
+    second: Small_Fireball_10x27_21
   - first:
-      213: 7043824215035706794
-    second: Small_Fireball_10x26_22
+      213: -6232515270295743007
+    second: Small_Fireball_10x27_22
   - first:
-      213: -7141791595323726631
-    second: Small_Fireball_10x26_23
+      213: 2548699006947705427
+    second: Small_Fireball_10x27_23
   - first:
-      213: 191948825800401613
-    second: Small_Fireball_10x26_24
+      213: -8512258380426807137
+    second: Small_Fireball_10x27_24
   - first:
-      213: -909843356245295691
-    second: Small_Fireball_10x26_25
+      213: -1889496443901863378
+    second: Small_Fireball_10x27_25
   - first:
-      213: 5752866016165635893
-    second: Small_Fireball_10x26_26
+      213: 2128734013876681697
+    second: Small_Fireball_10x27_26
   - first:
-      213: 4885896745210016723
-    second: Small_Fireball_10x26_27
+      213: -9056906657073302282
+    second: Small_Fireball_10x27_27
   - first:
-      213: 1370513315199127643
-    second: Small_Fireball_10x26_28
+      213: 8008522669446910364
+    second: Small_Fireball_10x27_28
   - first:
-      213: 6220558836932961541
-    second: Small_Fireball_10x26_29
+      213: -4747269675503482701
+    second: Small_Fireball_10x27_29
   - first:
-      213: -7667829178899910454
-    second: Small_Fireball_10x26_30
+      213: 8325045231945013378
+    second: Small_Fireball_10x27_30
   - first:
-      213: -5576926805354586669
-    second: Small_Fireball_10x26_31
+      213: 2280011349983276660
+    second: Small_Fireball_10x27_31
   - first:
-      213: 7038141960540901146
-    second: Small_Fireball_10x26_32
+      213: -5578495228330809081
+    second: Small_Fireball_10x27_32
   - first:
-      213: 82525919909735806
-    second: Small_Fireball_10x26_33
+      213: -3838028234037038810
+    second: Small_Fireball_10x27_33
   - first:
-      213: 4381568403700751542
-    second: Small_Fireball_10x26_34
+      213: -73839994245734675
+    second: Small_Fireball_10x27_34
   - first:
-      213: -2251244500956405212
-    second: Small_Fireball_10x26_35
+      213: 5721913018298902487
+    second: Small_Fireball_10x27_35
   - first:
-      213: -5809307734050449350
-    second: Small_Fireball_10x26_36
+      213: 2731038563898015209
+    second: Small_Fireball_10x27_36
   - first:
-      213: -3563904189112786
-    second: Small_Fireball_10x26_37
+      213: 5680115933809242244
+    second: Small_Fireball_10x27_37
   - first:
-      213: -1109103333879393865
-    second: Small_Fireball_10x26_38
+      213: 818493794036266949
+    second: Small_Fireball_10x27_38
   - first:
-      213: -7051786480555437742
-    second: Small_Fireball_10x26_39
+      213: -6602731405812838557
+    second: Small_Fireball_10x27_39
   - first:
-      213: -1734625698834064245
-    second: Small_Fireball_10x26_40
+      213: -6596128045602157522
+    second: Small_Fireball_10x27_40
   - first:
-      213: -4404980002584397801
-    second: Small_Fireball_10x26_41
+      213: -6707947245143039840
+    second: Small_Fireball_10x27_41
   - first:
-      213: 4513114364135333468
-    second: Small_Fireball_10x26_42
+      213: -1688766324611983142
+    second: Small_Fireball_10x27_42
   - first:
-      213: 2676118104396318327
-    second: Small_Fireball_10x26_43
+      213: -6523688235144868936
+    second: Small_Fireball_10x27_43
   - first:
-      213: 3814809599888007342
-    second: Small_Fireball_10x26_44
+      213: 2169580853700430255
+    second: Small_Fireball_10x27_44
   - first:
-      213: 8622567431999737426
-    second: Small_Fireball_10x26_45
+      213: -1244801088132327512
+    second: Small_Fireball_10x27_45
   - first:
-      213: 9140305310115603330
-    second: Small_Fireball_10x26_46
+      213: 6828543431243145469
+    second: Small_Fireball_10x27_46
   - first:
-      213: 7712272096522506583
-    second: Small_Fireball_10x26_47
+      213: 4279931727436378424
+    second: Small_Fireball_10x27_47
   - first:
-      213: -8256989904394271275
-    second: Small_Fireball_10x26_48
+      213: -8867207539200744344
+    second: Small_Fireball_10x27_48
   - first:
-      213: -9047882411946223171
-    second: Small_Fireball_10x26_49
+      213: 8670126261290071425
+    second: Small_Fireball_10x27_49
   - first:
-      213: -8757210156627911584
-    second: Small_Fireball_10x26_50
+      213: -3653085922261855228
+    second: Small_Fireball_10x27_50
   - first:
-      213: 4048402552251686974
-    second: Small_Fireball_10x26_51
+      213: 2214433371198382338
+    second: Small_Fireball_10x27_51
   - first:
-      213: -174303745231967232
-    second: Small_Fireball_10x26_52
+      213: -4315716900858328890
+    second: Small_Fireball_10x27_52
   - first:
-      213: -5535215076907555846
-    second: Small_Fireball_10x26_53
+      213: 3237222388996957900
+    second: Small_Fireball_10x27_53
   - first:
-      213: 7127655982996185697
-    second: Small_Fireball_10x26_54
+      213: 6672393156557267194
+    second: Small_Fireball_10x27_54
   - first:
-      213: 8764966246444022832
-    second: Small_Fireball_10x26_55
+      213: 1444336911052188362
+    second: Small_Fireball_10x27_55
   - first:
-      213: 3581421562789283431
-    second: Small_Fireball_10x26_56
+      213: 2103598549793418813
+    second: Small_Fireball_10x27_56
   - first:
-      213: -4501493010470408846
-    second: Small_Fireball_10x26_57
+      213: 2408628984294280702
+    second: Small_Fireball_10x27_57
   - first:
-      213: 8743994536243572359
-    second: Small_Fireball_10x26_58
+      213: -1757714385575298384
+    second: Small_Fireball_10x27_58
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -263,7 +263,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Small_Fireball_10x26_0
+      name: Small_Fireball_10x27_0
       rect:
         serializedVersion: 2
         x: 1
@@ -277,14 +277,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40ef5463884ac834fbddf2636a33109c
-      internalID: 3025866356083200111
+      spriteID: 878d53853617e924db0ed8f5ae224e77
+      internalID: -6544398390911708164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_1
+      name: Small_Fireball_10x27_1
       rect:
         serializedVersion: 2
         x: 11
@@ -298,14 +298,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df84a7828df14904c9635d8539f129c8
-      internalID: 5471406000359973772
+      spriteID: ce80c7b797b8f594f9747a0dda187521
+      internalID: -8323607618048971748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_2
+      name: Small_Fireball_10x27_2
       rect:
         serializedVersion: 2
         x: 21
@@ -319,14 +319,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f83fc3601d579024984778878a2aa126
-      internalID: 6881842568346245446
+      spriteID: fccddeef34162ef4fba1f37d3c6a7854
+      internalID: 2587783794285979317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_3
+      name: Small_Fireball_10x27_3
       rect:
         serializedVersion: 2
         x: 31
@@ -340,14 +340,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acd14f151706b3744bdcbf6b7dd7d393
-      internalID: 1324093072650019323
+      spriteID: f62ca4f5973f51341a4b512d578355b4
+      internalID: 6711293579688274378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_4
+      name: Small_Fireball_10x27_4
       rect:
         serializedVersion: 2
         x: 40
@@ -361,14 +361,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7b756c3eec668242bb9af572c341da6
-      internalID: -4223788405454877970
+      spriteID: 352e17b4fc4143e4c8495f10aa832071
+      internalID: -649492720449077127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_5
+      name: Small_Fireball_10x27_5
       rect:
         serializedVersion: 2
         x: 51
@@ -382,14 +382,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a70e2cf742c57648b835dc36f1c0a35
-      internalID: 1723776980114431751
+      spriteID: 02c2f8b61144e744187c534499f7e1bb
+      internalID: 2806016066016736911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_6
+      name: Small_Fireball_10x27_6
       rect:
         serializedVersion: 2
         x: 61
@@ -403,14 +403,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6b1f13f4c284384cb632e3a05e08485
-      internalID: 8730858024399026206
+      spriteID: ec2231c7f47025948a20de8aff100d7b
+      internalID: 3949506832523104023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_7
+      name: Small_Fireball_10x27_7
       rect:
         serializedVersion: 2
         x: 71
@@ -424,14 +424,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 693509898d5bc7842941deda3b17c9e9
-      internalID: 4724932671483771067
+      spriteID: 9ff8f335831603a42a5f6400ab774bfc
+      internalID: 6638174607297839549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_8
+      name: Small_Fireball_10x27_8
       rect:
         serializedVersion: 2
         x: 81
@@ -445,14 +445,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f3372cc2b080464285b65c51c84ce83
-      internalID: 9012657011610590324
+      spriteID: b632f48753561774e9555d6704a06c2d
+      internalID: -7767958621520958957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_9
+      name: Small_Fireball_10x27_9
       rect:
         serializedVersion: 2
         x: 91
@@ -466,14 +466,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9821387aa085c9479d6b6e7130600f8
-      internalID: 4414077819895014238
+      spriteID: db1fdf2cf5b245c4e81d40fda2842da4
+      internalID: 6067822975881311255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_10
+      name: Small_Fireball_10x27_10
       rect:
         serializedVersion: 2
         x: 1
@@ -487,14 +487,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c39361bf75dcee14193414d420fc6a4c
-      internalID: 7887931997134452911
+      spriteID: 7c81bd0711768664caddd16fee0097f7
+      internalID: 6344904709181014935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_11
+      name: Small_Fireball_10x27_11
       rect:
         serializedVersion: 2
         x: 11
@@ -508,14 +508,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b82c97b566e78c742a4c8c72b347214d
-      internalID: -2457861531371117489
+      spriteID: 8f3e2591afc5d2d42b951b6375d6c450
+      internalID: -4234239302498444236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_12
+      name: Small_Fireball_10x27_12
       rect:
         serializedVersion: 2
         x: 21
@@ -529,14 +529,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f660f311a1053642a3bba172120e8ec
-      internalID: -6840141169803045257
+      spriteID: 8cc0504973e4f3a4991c4ad7b4e53bbb
+      internalID: -3304420875831748562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_13
+      name: Small_Fireball_10x27_13
       rect:
         serializedVersion: 2
         x: 31
@@ -550,14 +550,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a73673d5530a63c488604e4c573f383e
-      internalID: -7876419421491588294
+      spriteID: 9fcbcadc1b112ce468c73260bd01eb33
+      internalID: 1234640739946939864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_14
+      name: Small_Fireball_10x27_14
       rect:
         serializedVersion: 2
         x: 41
@@ -571,14 +571,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c43eda9a9f50b94398dd722764a9930
-      internalID: -4195092705338621234
+      spriteID: 11c8f46ee95476344b42589d5607c993
+      internalID: -2937558581589330131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_15
+      name: Small_Fireball_10x27_15
       rect:
         serializedVersion: 2
         x: 51
@@ -592,14 +592,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93545d4e1f1bc90489ebb1499b6f031d
-      internalID: 6567071039009473625
+      spriteID: eb324f5f17d58e94a82f8c87d009729d
+      internalID: -1454985291071660353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_16
+      name: Small_Fireball_10x27_16
       rect:
         serializedVersion: 2
         x: 61
@@ -613,14 +613,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cc21913431af674aa1f0b12f5eb3299
-      internalID: -4421408385615612123
+      spriteID: 15a7b5e250c72654a8f37122d481eaca
+      internalID: 6346145672741885844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_17
+      name: Small_Fireball_10x27_17
       rect:
         serializedVersion: 2
         x: 71
@@ -634,14 +634,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 808d6a36f35535c4aa32bf96925c5770
-      internalID: -6399340546190279346
+      spriteID: b653ca8a323f34146ba7be70115a7a6b
+      internalID: 5323755766352198103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_18
+      name: Small_Fireball_10x27_18
       rect:
         serializedVersion: 2
         x: 81
@@ -655,14 +655,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5da3f3fa3f46294c907273b5d524af2
-      internalID: -144872626697716787
+      spriteID: 69793ef40567bc44db3d6a23862f3ff8
+      internalID: -4671200910471399308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_19
+      name: Small_Fireball_10x27_19
       rect:
         serializedVersion: 2
         x: 91
@@ -676,14 +676,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b689b6205d2c16e40b6324a3649bdc30
-      internalID: 6779828537082417372
+      spriteID: 47e92a1fc8de2f1428118b328836c5c6
+      internalID: 4113693959564509723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_20
+      name: Small_Fireball_10x27_20
       rect:
         serializedVersion: 2
         x: 1
@@ -697,14 +697,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d25094c978ac1ed42b3308a765df5685
-      internalID: 5071723896510065527
+      spriteID: 9c53c9d403b37944e8d36768e1df1465
+      internalID: -2997518450170068389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_21
+      name: Small_Fireball_10x27_21
       rect:
         serializedVersion: 2
         x: 11
@@ -718,14 +718,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c360a0d22ee78a843b4d41d0f21b6b01
-      internalID: -466561126682317933
+      spriteID: 5ff7294d65d3e3d42abd98063061d854
+      internalID: -4574923866347631901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_22
+      name: Small_Fireball_10x27_22
       rect:
         serializedVersion: 2
         x: 21
@@ -739,14 +739,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c64d7ab0bcba9c4a9f6579ad955c5d3
-      internalID: 7043824215035706794
+      spriteID: 1600f6bbb3af4c44abd6c6b1a9f36b02
+      internalID: -6232515270295743007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_23
+      name: Small_Fireball_10x27_23
       rect:
         serializedVersion: 2
         x: 31
@@ -760,14 +760,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7825447a4bacb454983c75859291e267
-      internalID: -7141791595323726631
+      spriteID: b189bc5f41d60304bbff665d322bb3e6
+      internalID: 2548699006947705427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_24
+      name: Small_Fireball_10x27_24
       rect:
         serializedVersion: 2
         x: 41
@@ -781,14 +781,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3219ffcdef50a14a853081f8eec201b
-      internalID: 191948825800401613
+      spriteID: cde5769b47c2f3a4c92c4df5c3bd97f5
+      internalID: -8512258380426807137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_25
+      name: Small_Fireball_10x27_25
       rect:
         serializedVersion: 2
         x: 51
@@ -802,14 +802,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 186e693e15df70247b0acf56dcf99bf2
-      internalID: -909843356245295691
+      spriteID: d8ce5b9a7dda62344b9d9d5c4ff20af2
+      internalID: -1889496443901863378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_26
+      name: Small_Fireball_10x27_26
       rect:
         serializedVersion: 2
         x: 61
@@ -823,14 +823,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da0e8264a37165248b0b061a5fe9c56d
-      internalID: 5752866016165635893
+      spriteID: 7568c5e2b12b6c049a6e7447ea70471b
+      internalID: 2128734013876681697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_27
+      name: Small_Fireball_10x27_27
       rect:
         serializedVersion: 2
         x: 71
@@ -844,14 +844,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e68d5f8d7de980d4293f0dec553c318a
-      internalID: 4885896745210016723
+      spriteID: acaf2113739952e4092228fac405f203
+      internalID: -9056906657073302282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_28
+      name: Small_Fireball_10x27_28
       rect:
         serializedVersion: 2
         x: 81
@@ -865,14 +865,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69afee7e795f0654ba20901523b65dbf
-      internalID: 1370513315199127643
+      spriteID: b91d380b4119177458c1c461008547c9
+      internalID: 8008522669446910364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_29
+      name: Small_Fireball_10x27_29
       rect:
         serializedVersion: 2
         x: 91
@@ -886,14 +886,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b86bc027d5e03244a26a7e22ceafa11
-      internalID: 6220558836932961541
+      spriteID: 2570b15bf6a03ad4f8241be6a05a89cf
+      internalID: -4747269675503482701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_30
+      name: Small_Fireball_10x27_30
       rect:
         serializedVersion: 2
         x: 1
@@ -907,14 +907,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1e2d797e45400448b82dd66acf436ec
-      internalID: -7667829178899910454
+      spriteID: d11b1bdad089bbf4082587467facee60
+      internalID: 8325045231945013378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_31
+      name: Small_Fireball_10x27_31
       rect:
         serializedVersion: 2
         x: 11
@@ -928,14 +928,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f18c2d4e591474347bea3f9977bcc8d2
-      internalID: -5576926805354586669
+      spriteID: 0650cad06c3772c408cdaaf22fbdf697
+      internalID: 2280011349983276660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_32
+      name: Small_Fireball_10x27_32
       rect:
         serializedVersion: 2
         x: 21
@@ -949,14 +949,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca9795c9b78f6034cb9012cd23d9787d
-      internalID: 7038141960540901146
+      spriteID: ea8a9431189b66b4bbcfdc418f5e8713
+      internalID: -5578495228330809081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_33
+      name: Small_Fireball_10x27_33
       rect:
         serializedVersion: 2
         x: 31
@@ -970,14 +970,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caabeea648d928643934108f27af1141
-      internalID: 82525919909735806
+      spriteID: eaf68ddafb1234945a6675ded3bfa1f9
+      internalID: -3838028234037038810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_34
+      name: Small_Fireball_10x27_34
       rect:
         serializedVersion: 2
         x: 41
@@ -991,14 +991,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24542371b7887c244bb905c68eb83960
-      internalID: 4381568403700751542
+      spriteID: 02a23094d7914184186e4fef001fae9e
+      internalID: -73839994245734675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_35
+      name: Small_Fireball_10x27_35
       rect:
         serializedVersion: 2
         x: 51
@@ -1012,14 +1012,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07e5fbf6f5e94094cb0b1c9bec87f1ed
-      internalID: -2251244500956405212
+      spriteID: a8b79627526281640ac51fc7fe1dee57
+      internalID: 5721913018298902487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_36
+      name: Small_Fireball_10x27_36
       rect:
         serializedVersion: 2
         x: 61
@@ -1033,14 +1033,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6c2c680b7f2f754384862be7f6a3020
-      internalID: -5809307734050449350
+      spriteID: ec911f908d20a4c499576be0420bfbaa
+      internalID: 2731038563898015209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_37
+      name: Small_Fireball_10x27_37
       rect:
         serializedVersion: 2
         x: 71
@@ -1054,14 +1054,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 584dbf8aa339f534c99e08ebf3a1aa02
-      internalID: -3563904189112786
+      spriteID: 93dbed5a6f6c451429ea336d96ddf5ee
+      internalID: 5680115933809242244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_38
+      name: Small_Fireball_10x27_38
       rect:
         serializedVersion: 2
         x: 81
@@ -1075,14 +1075,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1f648a24f50b01448b55450aaeeb9be
-      internalID: -1109103333879393865
+      spriteID: 1890d5d6df8e9124cb84489bd4324a90
+      internalID: 818493794036266949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_39
+      name: Small_Fireball_10x27_39
       rect:
         serializedVersion: 2
         x: 91
@@ -1096,14 +1096,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dedb3175d56951429b4e94b9b754392
-      internalID: -7051786480555437742
+      spriteID: 183eccece279e4f4d84fb19ad3a04266
+      internalID: -6602731405812838557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_40
+      name: Small_Fireball_10x27_40
       rect:
         serializedVersion: 2
         x: 1
@@ -1117,14 +1117,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf552182fd3766f4c802f0506af5b728
-      internalID: -1734625698834064245
+      spriteID: 80ca2b7f060c3a8479c66c238f8222fc
+      internalID: -6596128045602157522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_41
+      name: Small_Fireball_10x27_41
       rect:
         serializedVersion: 2
         x: 11
@@ -1138,14 +1138,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e557dbc0ab4fdb9409f70bd48e0cdbe5
-      internalID: -4404980002584397801
+      spriteID: 9c0e3c8008ef6d048a39f5a00a2987e4
+      internalID: -6707947245143039840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_42
+      name: Small_Fireball_10x27_42
       rect:
         serializedVersion: 2
         x: 21
@@ -1159,14 +1159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90ef263dd75679149873135b10bac67c
-      internalID: 4513114364135333468
+      spriteID: d09c27a99040ef24aaf344575750e2ba
+      internalID: -1688766324611983142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_43
+      name: Small_Fireball_10x27_43
       rect:
         serializedVersion: 2
         x: 31
@@ -1180,14 +1180,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d7723a966e3fbf448643e3e801d1255
-      internalID: 2676118104396318327
+      spriteID: 8b2347cdf8781cb438755712a55191af
+      internalID: -6523688235144868936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_44
+      name: Small_Fireball_10x27_44
       rect:
         serializedVersion: 2
         x: 41
@@ -1201,14 +1201,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bab62d2969d7d3b42af16282105125c6
-      internalID: 3814809599888007342
+      spriteID: 7d99cb847df44a447a516c99bb609d67
+      internalID: 2169580853700430255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_45
+      name: Small_Fireball_10x27_45
       rect:
         serializedVersion: 2
         x: 51
@@ -1222,14 +1222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10f8c07a75d06074984da44c9ae530d4
-      internalID: 8622567431999737426
+      spriteID: 1754dc5fbf937d94c96473227b35cde3
+      internalID: -1244801088132327512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_46
+      name: Small_Fireball_10x27_46
       rect:
         serializedVersion: 2
         x: 61
@@ -1243,14 +1243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 262921f7a7927e24ba4d069640f37bf7
-      internalID: 9140305310115603330
+      spriteID: 18b76009d2b93194d82c09b482a3e69d
+      internalID: 6828543431243145469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_47
+      name: Small_Fireball_10x27_47
       rect:
         serializedVersion: 2
         x: 71
@@ -1264,14 +1264,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55ed83cf5c517d04bbb21eeb38e1f4b1
-      internalID: 7712272096522506583
+      spriteID: b28ac9153778b5d428f718c07f527503
+      internalID: 4279931727436378424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_48
+      name: Small_Fireball_10x27_48
       rect:
         serializedVersion: 2
         x: 81
@@ -1285,14 +1285,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f97ec67d83afdfd479977ec88b5b0d0e
-      internalID: -8256989904394271275
+      spriteID: 4bcf29241a1275f4783b76d7106bcb7f
+      internalID: -8867207539200744344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_49
+      name: Small_Fireball_10x27_49
       rect:
         serializedVersion: 2
         x: 91
@@ -1306,14 +1306,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d49d745385073f9489cedb206a656bd3
-      internalID: -9047882411946223171
+      spriteID: 190fd13bd081e534993ed0b4ea1429f5
+      internalID: 8670126261290071425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_50
+      name: Small_Fireball_10x27_50
       rect:
         serializedVersion: 2
         x: 1
@@ -1327,14 +1327,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d099ec26ca2893479f33ffa0f21fce4
-      internalID: -8757210156627911584
+      spriteID: cecf0140df036cb479f183a6590f2a19
+      internalID: -3653085922261855228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_51
+      name: Small_Fireball_10x27_51
       rect:
         serializedVersion: 2
         x: 11
@@ -1348,14 +1348,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8b44ea41b84e6b499a99b02b91dd84f
-      internalID: 4048402552251686974
+      spriteID: 1c5125266a2000b488a20868d2e1988e
+      internalID: 2214433371198382338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_52
+      name: Small_Fireball_10x27_52
       rect:
         serializedVersion: 2
         x: 21
@@ -1369,14 +1369,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39be8ec0910977b40b0174a1430922fe
-      internalID: -174303745231967232
+      spriteID: 15ef97c05bcae42429ed2840cdd81cad
+      internalID: -4315716900858328890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_53
+      name: Small_Fireball_10x27_53
       rect:
         serializedVersion: 2
         x: 31
@@ -1390,14 +1390,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 317c182e8b4be5e48942f7b4d6b0d97f
-      internalID: -5535215076907555846
+      spriteID: 4764e3b8ba1be6946be6f1a29d427e2d
+      internalID: 3237222388996957900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_54
+      name: Small_Fireball_10x27_54
       rect:
         serializedVersion: 2
         x: 41
@@ -1411,35 +1411,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 778c1f371b3e3d74383b66b0b0bdba57
-      internalID: 7127655982996185697
+      spriteID: 08180259150214a47ba14c2239d14677
+      internalID: 6672393156557267194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_55
+      name: Small_Fireball_10x27_55
       rect:
         serializedVersion: 2
         x: 51
         y: 1
-        width: 8
+        width: 10
         height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 9, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee8619b23528e194181127ebaa07e2ff
-      internalID: 8764966246444022832
+      spriteID: 1a9cdd3dfa802ab4da58535de6b1e37a
+      internalID: 1444336911052188362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_56
+      name: Small_Fireball_10x27_56
       rect:
         serializedVersion: 2
         x: 71
@@ -1453,14 +1453,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4155731176cd09478a0b160e80eca8d
-      internalID: 3581421562789283431
+      spriteID: 59009c515381663428f3143a06b49f69
+      internalID: 2103598549793418813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_57
+      name: Small_Fireball_10x27_57
       rect:
         serializedVersion: 2
         x: 81
@@ -1474,14 +1474,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9563528f577a4d4da4a0d396c153dad
-      internalID: -4501493010470408846
+      spriteID: 479ba27caacc5454aa62b75b8ef9a8ce
+      internalID: 2408628984294280702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small_Fireball_10x26_58
+      name: Small_Fireball_10x27_58
       rect:
         serializedVersion: 2
         x: 91
@@ -1495,8 +1495,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 208eb0450ede6f24b8e73c3696ec0577
-      internalID: 8743994536243572359
+      spriteID: e52da0e615dc1d34cba2b2e0d58bec36
+      internalID: -1757714385575298384
       vertices: []
       indices: 
       edges: []

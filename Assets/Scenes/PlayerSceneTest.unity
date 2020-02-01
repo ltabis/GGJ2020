@@ -750,12 +750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   repairTime: 10
   status: 0
-  cooldown: 5
-  destroySprite: {fileID: 0}
-  inRepaireSprite: {fileID: 0}
-  repaireSprite: {fileID: 0}
-  munition: {fileID: 7147308459423412185, guid: 49c2907a311ae994fa113dfc97f02f04,
-    type: 3}
+  turret: {fileID: 11400000, guid: a08dc2338a1213a45834a91958958d38, type: 2}
 --- !u!136 &1534649779
 CapsuleCollider:
   m_ObjectHideFlags: 0
