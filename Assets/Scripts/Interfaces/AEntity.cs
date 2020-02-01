@@ -4,10 +4,10 @@ using UnityEngine;
 
 abstract public class AEntity : MonoBehaviour
 {
-    protected float _life;
-    protected float _speed;
-    protected float _damage;
-    protected float _range;
+    protected float _life = 0;
+    protected float _speed = 0;
+    protected float _damage = 0;
+    protected float _range = 0;
 
     // Get the life points of the entity.
     public float Life()

@@ -16,8 +16,8 @@ abstract public class AItem : MonoBehaviour
         Useless, Common, Rare, Epic, Legendary
     };
 
-    protected string _name;
-    protected string _description;
-    protected Rarity _rarity;
-    protected float _price;
+    protected string _name = "Unknown";
+    protected string _description = "None.";
+    protected Rarity _rarity = Rarity.Useless;
+    protected float _price = 0;
 }
