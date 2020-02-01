@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 // Interface for item usage.
@@ -8,16 +9,45 @@ public interface IItem
     void Use();
 }
 
+[CreateAssetMenu(fileName = "Item", menuName = "Item")]
 // Abstract class for Item characteristics.
-abstract public class AItem : MonoBehaviour
+public class Item : ScriptableObject
 {
+    // Default characteristics values.
+    public string description = "None.";
+    public Rarity rarity = Rarity.Useless;
+    public float price = 0;
+    public uint id = 0;
+
+    // UI.
+    public Sprite artwork;
+
     public enum Rarity
     {
-        Useless, Common, Rare, Epic, Legendary
+        Useless,
+        Common,
+        Rare,
+        Epic,
+        Legendary
     };
 
-    protected string _name = "Unknown";
-    protected string _description = "None.";
-    protected Rarity _rarity = Rarity.Useless;
-    protected float _price = 0;
+    // Get rarity chance rate.
+    public float GetItemRarityPercentage(Rarity rarity)
+    {
+        switch (rarity)
+        {
+            case Rarity.Useless :
+                return 10;
+            case Rarity.Common:
+                return 8.50f;
+            case Rarity.Rare:
+                return 6.75f;
+            case Rarity.Epic:
+                return 3.33f;
+            case Rarity.Legendary:
+                return 1.25f;
+        }
+   
+        return 0;
+    }
 }
