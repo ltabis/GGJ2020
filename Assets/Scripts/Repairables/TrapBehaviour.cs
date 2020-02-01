@@ -19,9 +19,8 @@ public class TrapBehaviour : ARepairable
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("collision");
         if (status == ReperableStatus.Repair)
         {
             Debug.Log(other.gameObject.name);
@@ -31,6 +30,6 @@ public class TrapBehaviour : ARepairable
 
     private void Explode()
     {
-        Destroy(this);
+        Destroy(gameObject);
     }
 }
