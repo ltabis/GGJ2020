@@ -51,6 +51,6 @@ public class OtherItemSlot : MonoBehaviour
     // Remove an item from the slot and the inventory.
     public void RemoveItem()
     {
-        // ToggleGUI(false);
+        ToggleGUI(false);
     }
 }

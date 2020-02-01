@@ -6,7 +6,6 @@ using System;
 public class OtherInventory : Inventory
 {
     // Inventory slots.
-    public GameObject itemsParent;
     private OtherItemSlot[] _otherItemSlotsUI;
 
     // Public.
@@ -17,8 +16,6 @@ public class OtherInventory : Inventory
         // Getting all slots.
         _otherItemSlotsUI = itemsParent.GetComponentsInChildren<OtherItemSlot>();
 
-        _fixedSize = 5;
-
         // Generating items.
         Generate();
     }
@@ -26,7 +23,7 @@ public class OtherInventory : Inventory
     // Generates a random set of items.
     public void Generate()
     {
-        uint itemsToGenerate = (uint)UnityEngine.Random.Range(0, _fixedSize);
+        uint itemsToGenerate = (uint)UnityEngine.Random.Range(0, _fixedSize - 1);
 
         // Generate as much items as the random suggest.
         for (uint item = 0; item < itemsToGenerate; ++item)
@@ -45,8 +42,12 @@ public class OtherInventory : Inventory
     // Change ownership of the items.
     public List<Tuple<Item, uint>> GetAllItems()
     {
-        var items = _content;
+        var items = new List<Tuple<Item, uint>>(_content);
 
+        foreach (var itemSlot in _otherItemSlotsUI)
+        {
+            itemSlot.RemoveItem();
+        }
         _content.Clear();
         return items;
     }
