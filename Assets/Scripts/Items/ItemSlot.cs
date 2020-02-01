@@ -5,7 +5,10 @@ using UnityEngine.UI;
 
 public class ItemSlot : MonoBehaviour
 {
+    public GameObject itemData;
+
     // UI.
+    private Item _item;
     public Button buttonUI;
     public Button crossUI;
     public Image slotUI;
@@ -23,6 +26,22 @@ public class ItemSlot : MonoBehaviour
         ToggleGUI(false);
     }
 
+    private void Update()
+    {
+        if (itemData.activeSelf)
+            itemData.transform.position = Input.mousePosition;
+    }
+
+    // Display data sheet of the item.
+    public void DisplayData()
+    {
+        itemData.SetActive(true);
+    }
+    public void HideData()
+    {
+        itemData.SetActive(false);
+    }
+
     // Toggle the UI on and off.
     private void ToggleGUI(bool toggle)
     {
@@ -36,7 +55,9 @@ public class ItemSlot : MonoBehaviour
     {
         buttonUI.image.sprite = item.artwork;
         quantityUI.text = (_quantity + quantity).ToString();
+        _item = item;
         _quantity += quantity;
+        itemData.GetComponent<ItemDisplay>().item = item;
         ToggleGUI(true);
     }
 
