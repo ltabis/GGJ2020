@@ -26,7 +26,8 @@ public class TrapBehaviour : ARepairable
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "enemy" || other.gameObject.tag == "player")
+        Debug.Log("Enter the zone : " + other.name);
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Player")
         {
             InRadius.Add(other.gameObject);
         }
@@ -38,7 +39,7 @@ public class TrapBehaviour : ARepairable
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.tag == "enemy" || other.gameObject.tag == "player")
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Player")
         {
             InRadius.Remove(other.gameObject);
         }
@@ -48,6 +49,7 @@ public class TrapBehaviour : ARepairable
     {
         for (int i = 0; i < InRadius.Count; i++)
         {
+            Debug.Log("Damage : " + InRadius[i].name);
             InRadius[i].GetComponent<AEntity>().TakeDamage(trap.damage);
         }
         InRadius.Clear();
