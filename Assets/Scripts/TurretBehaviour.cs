@@ -43,7 +43,7 @@ public class TurretBehaviour : ARepairable
     {
         GameObject spawn = Instantiate(munition, gameObject.GetComponent<Transform>().position, gameObject.GetComponent<Transform>().rotation);
         spawn.transform.SetParent(gameObject.transform);
-        spawn.GetComponent<BulletBehaviour>().direction = FindNearerEnnemy();
+        spawn.GetComponent<BulletBehaviour>().direction = FindNearerEnnemy().transform.position;
     }
 
     private GameObject FindNearerEnnemy()
@@ -56,5 +56,6 @@ public class TurretBehaviour : ARepairable
                 nearer = enemies[i];
 //            else if ()
         }
+        return nearer;
     }
 }
