@@ -18,4 +18,4 @@ MonoBehaviour:
   destroySprite: {fileID: 0}
   inRepaireSprite: {fileID: 0}
   repaireSprite: {fileID: 0}
-  bullet: {fileID: 7147308459423412185, guid: 49c2907a311ae994fa113dfc97f02f04, type: 3}
+  bullet: {fileID: 4842195130532119386, guid: 6b13f78b493127a4f9a32fa3f112f2b9, type: 3}
