@@ -69,8 +69,13 @@ abstract public class AEntity : MonoBehaviour
     public void TakeDamage(float amount)
     {
         if (_life <= amount)
-            Destroy(gameObject);
+            _life = 0;
         else
             _life -= amount;
+        GameObject hud = GameObject.Find("HUD");
+        if (hud != null)
+            hud.GetComponent<HUD>().OnUpdate();
+        if (_life == 0)
+            Destroy(gameObject);
     }
 }
