@@ -9,7 +9,7 @@ public interface IItem
     void Use();
 }
 
-[CreateAssetMenu(fileName = "Item", menuName = "Item")]
+[CreateAssetMenu(fileName = "Item", menuName = "ScriptableObjects/Item")]
 // Abstract class for Item characteristics.
 public class Item : ScriptableObject
 {
