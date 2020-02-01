@@ -36,7 +36,6 @@ public class TurretBehaviour : ARepairable
     // Spwan munition gameObject
     private void Shoot(GameObject target)
     {
-        Debug.Log("shooooot");
         GameObject spawn = Instantiate(turret.bullet, gameObject.transform.position, gameObject.transform.rotation);
         spawn.transform.SetParent(gameObject.transform);
         spawn.GetComponent<BulletBehaviour>().direction = target.transform.position - gameObject.transform.position;
