@@ -16,23 +16,21 @@ public class TrapBehaviour : ARepairable
         {
             Activation();
         }
-        if (trap.cooldown >= 0)
+        if (trap.cooldown > 0)
         {
             trap.cooldown -= Time.deltaTime;
-
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Enter the zone : " + other.name);
         if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Player")
         {
             InRadius.Add(other.gameObject);
-        }
-        if (status == ReperableStatus.Using && trap.cooldown != 0)
-        {
-            activated = true;
+            if (status == ReperableStatus.Using && trap.cooldown <= 0)
+            {
+                activated = true;
+            }
         }
     }
 
@@ -48,7 +46,6 @@ public class TrapBehaviour : ARepairable
     {
         for (int i = 0; i < InRadius.Count; i++)
         {
-            Debug.Log("Damage : " + InRadius[i].name);
             InRadius[i].GetComponent<AEntity>().TakeDamage(trap.damage);
         }
         InRadius.Clear();
