@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : AEntity
 {
+    // HUD.
+    public HUD hud;
+
     // Inventory.
     public Inventory inventory;
     private OtherInventory otherInventory = null;
@@ -12,6 +15,8 @@ public class PlayerController : AEntity
     // Parent of slots
     public GameObject itemsParent;
 
+    public uint scrap = 50;
+
     // Object detection.
     Ray ray;
     RaycastHit hit;
@@ -19,9 +24,17 @@ public class PlayerController : AEntity
     private void Start()
     {
         _life = 100;
+        _maxLife = 100;
+        _shield = 100;
+        _maxShield = 100;
+        _energy = 100;
+        _maxEnergy = 100;
         _damage = 0;
         _range = 5;
         _speed = 5;
+
+        hud = GameObject.Find("HUD").GetComponent<HUD>();
+        hud.OnUpdate();
     }
 
     // Update is called once per frame
@@ -100,11 +113,13 @@ public class PlayerController : AEntity
         }
         else if (collider && collider.CompareTag("Repairable"))
         {
-            if (Input.GetButtonDown("Use") == true)
+            if (Input.GetButtonDown("Use") == true && scrap > 0)
             {
                 var repairable = collider.GetComponentInChildren<ARepairable>();
 
-                repairable.Repair(60);
+                repairable.Repair(1);
+                scrap -= 1;
+                hud.OnUpdate();
             }
 
         }
