@@ -26,6 +26,12 @@ public class ItemSlot : MonoBehaviour
         ToggleGUI(false);
     }
 
+    private void Update()
+    {
+        if (itemData.activeSelf)
+            itemData.transform.position = Input.mousePosition;
+    }
+
     // Display data sheet of the item.
     public void DisplayData()
     {
