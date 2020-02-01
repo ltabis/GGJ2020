@@ -14,31 +14,29 @@ public class TrapBehaviour : ARepairable
     {
         if (activated)
         {
-            if (trap.cooldown <= 0)
-            {
-                Activation();
-                activated = false;
-            }
-            else
-                trap.cooldown -= Time.deltaTime;
+            Activation();
+        }
+        if (trap.cooldown > 0)
+        {
+            trap.cooldown -= Time.deltaTime;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "enemy" || other.gameObject.tag == "player")
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Player")
         {
             InRadius.Add(other.gameObject);
-        }
-        if (status == ReperableStatus.Repair)
-        {
-            activated = true;
+            if (status == ReperableStatus.Using && trap.cooldown <= 0)
+            {
+                activated = true;
+            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.tag == "enemy" || other.gameObject.tag == "player")
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Player")
         {
             InRadius.Remove(other.gameObject);
         }

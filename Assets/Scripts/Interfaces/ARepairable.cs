@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum ReperableStatus
 {
-    Broken, Repair, Use
+    Broken, Repairing, Using, Unused
 };
 
 public class ARepairable : MonoBehaviour
@@ -12,25 +12,26 @@ public class ARepairable : MonoBehaviour
     public float repairTime;
     public ReperableStatus status = ReperableStatus.Broken;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
-    void Repair(float value)
+    public void Repair(float value)
     {
         if (status == ReperableStatus.Broken)
         {
-            status = ReperableStatus.Use;
+            status = ReperableStatus.Repairing;
         }
         repairTime -= value;
         if (repairTime <= 0)
-            status = ReperableStatus.Repair;
+            status = ReperableStatus.Unused;
+    }
+
+    public bool Use()
+    {
+        if (repairTime > 0)
+            return false;
+
+        if (status == ReperableStatus.Using)
+            status = ReperableStatus.Unused;
+        else
+            status = ReperableStatus.Using;
+        return true;
     }
 }

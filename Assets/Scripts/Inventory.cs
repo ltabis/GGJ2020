@@ -62,7 +62,7 @@ public class Inventory : MonoBehaviour
             if (item.Item1.name == toFind)
             {
                 _content.Remove(item);
-                _itemSlotsUI[idx].RemoveItem(item.Item1);
+                _itemSlotsUI[idx].RemoveItem();
             }
         }
     }

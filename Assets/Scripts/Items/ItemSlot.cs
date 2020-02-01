@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class ItemSlot : MonoBehaviour
 {
-    // Inventory.
-    public Inventory inventory;
+    public GameObject itemData;
 
     // UI.
+    private Item _item;
     public Button buttonUI;
+    public Button crossUI;
     public Image slotUI;
-    public Image crossUI;
     public Text quantityUI;
 
     // Other.
@@ -19,22 +19,34 @@ public class ItemSlot : MonoBehaviour
 
     private void Start()
     {
-        // Setting a callback for the player.
-        buttonUI.onClick.AddListener(TransferItem);
+        // Setting a callback when the button is clicked.
+        crossUI.onClick.AddListener(RemoveItem);
 
         // The slot is empty, toggle off everything.
         ToggleGUI(false);
     }
-    private void TransferItem()
-    {
 
+    private void Update()
+    {
+        if (itemData.activeSelf)
+            itemData.transform.position = Input.mousePosition;
+    }
+
+    // Display data sheet of the item.
+    public void DisplayData()
+    {
+        itemData.SetActive(true);
+    }
+    public void HideData()
+    {
+        itemData.SetActive(false);
     }
 
     // Toggle the UI on and off.
     private void ToggleGUI(bool toggle)
     {
-        buttonUI.gameObject.SetActive(toggle);
         crossUI.gameObject.SetActive(toggle);
+        buttonUI.gameObject.SetActive(toggle);
         quantityUI.gameObject.SetActive(toggle);
     }
 
@@ -43,15 +55,15 @@ public class ItemSlot : MonoBehaviour
     {
         buttonUI.image.sprite = item.artwork;
         quantityUI.text = (_quantity + quantity).ToString();
+        _item = item;
         _quantity += quantity;
+        itemData.GetComponent<ItemDisplay>().item = item;
         ToggleGUI(true);
     }
 
     // Remove an item from the slot and the inventory.
-    public void RemoveItem(Item item)
+    public void RemoveItem()
     {
-        inventory.Remove(item.name);
-
         ToggleGUI(false);
         _quantity = 0;
     }

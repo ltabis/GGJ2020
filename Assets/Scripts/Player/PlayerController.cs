@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : AEntity
 {
+    // HUD.
+    public HUD hud;
+
     // Inventory.
     public Inventory inventory;
     private OtherInventory otherInventory = null;
@@ -12,8 +15,7 @@ public class PlayerController : AEntity
     // Parent of slots
     public GameObject itemsParent;
 
-    // All item slots.
-    private ItemSlot[] _itemSlotsUI;
+    public uint scrap = 50;
 
     // Object detection.
     Ray ray;
@@ -22,11 +24,17 @@ public class PlayerController : AEntity
     private void Start()
     {
         _life = 100;
+        _maxLife = 100;
+        _shield = 100;
+        _maxShield = 100;
+        _energy = 100;
+        _maxEnergy = 100;
         _damage = 0;
         _range = 5;
         _speed = 5;
 
-        _itemSlotsUI = itemsParent.GetComponentsInChildren<ItemSlot>();
+        hud = GameObject.Find("HUD").GetComponent<HUD>();
+        hud.OnUpdate();
     }
 
     // Update is called once per frame
@@ -82,7 +90,7 @@ public class PlayerController : AEntity
         // Getting an eventual object.
         var collider = ObjectOver();
 
-        if (collider)
+        if (collider && collider.CompareTag("Treasure"))
         {
             var tmpInventory = collider.GetComponentInChildren<OtherInventory>();
 
@@ -102,6 +110,18 @@ public class PlayerController : AEntity
                 otherInventory = tmpInventory;
                 otherInventory.ToggleInventory(true);
             }
+        }
+        else if (collider && collider.CompareTag("Repairable"))
+        {
+            if (Input.GetButtonDown("Use") == true && scrap > 0)
+            {
+                var repairable = collider.GetComponentInChildren<ARepairable>();
+
+                repairable.Repair(1);
+                scrap -= 1;
+                hud.OnUpdate();
+            }
+
         }
         else if (otherInventory != null)
             otherInventory.ToggleInventory(false);

@@ -16,6 +16,7 @@ MonoBehaviour:
   isPlayerSensible: 1
   damage: 20
   cooldown: 0
+  activationTime: 0.5
   destroySprite: {fileID: 0}
   inRepaireSprite: {fileID: 0}
   repaireSprite: {fileID: 0}
