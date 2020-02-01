@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3b7a52b5eb107a4cbb34e110ece50b0, type: 3}
-  m_Name: turretX1
+  m_Script: {fileID: 11500000, guid: f503b466b2315c34ba5dc08fa965cd3b, type: 3}
+  m_Name: bomb
   m_EditorClassIdentifier: 
-  turretName: X1
-  damage: 5
-  cooldown: 1
+  trapName: Bomb
+  isPlayerSensible: 1
+  damage: 20
+  cooldown: 0
   destroySprite: {fileID: 0}
   inRepaireSprite: {fileID: 0}
   repaireSprite: {fileID: 0}
-  bullet: {fileID: 4842195130532119386, guid: 6b13f78b493127a4f9a32fa3f112f2b9, type: 3}
