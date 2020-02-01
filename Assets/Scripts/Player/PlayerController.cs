@@ -12,9 +12,6 @@ public class PlayerController : AEntity
     // Parent of slots
     public GameObject itemsParent;
 
-    // All item slots.
-    private ItemSlot[] _itemSlotsUI;
-
     // Object detection.
     Ray ray;
     RaycastHit hit;
@@ -25,8 +22,6 @@ public class PlayerController : AEntity
         _damage = 0;
         _range = 5;
         _speed = 5;
-
-        _itemSlotsUI = itemsParent.GetComponentsInChildren<ItemSlot>();
     }
 
     // Update is called once per frame
@@ -82,7 +77,7 @@ public class PlayerController : AEntity
         // Getting an eventual object.
         var collider = ObjectOver();
 
-        if (collider)
+        if (collider && collider.CompareTag("Treasure"))
         {
             var tmpInventory = collider.GetComponentInChildren<OtherInventory>();
 
@@ -102,6 +97,16 @@ public class PlayerController : AEntity
                 otherInventory = tmpInventory;
                 otherInventory.ToggleInventory(true);
             }
+        }
+        else if (collider && collider.CompareTag("Repairable"))
+        {
+            if (Input.GetButtonDown("Use") == true)
+            {
+                var repairable = collider.GetComponentInChildren<ARepairable>();
+
+                repairable.Repair(60);
+            }
+
         }
         else if (otherInventory != null)
             otherInventory.ToggleInventory(false);

@@ -31,7 +31,7 @@ public class TrapBehaviour : ARepairable
         {
             InRadius.Add(other.gameObject);
         }
-        if (status == ReperableStatus.Repair)
+        if (status == ReperableStatus.Using)
         {
             activated = true;
         }

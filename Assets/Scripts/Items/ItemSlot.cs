@@ -5,13 +5,10 @@ using UnityEngine.UI;
 
 public class ItemSlot : MonoBehaviour
 {
-    // Inventory.
-    public Inventory inventory;
-
     // UI.
     public Button buttonUI;
+    public Button crossUI;
     public Image slotUI;
-    public Image crossUI;
     public Text quantityUI;
 
     // Other.
@@ -19,22 +16,18 @@ public class ItemSlot : MonoBehaviour
 
     private void Start()
     {
-        // Setting a callback for the player.
-        buttonUI.onClick.AddListener(TransferItem);
+        // Setting a callback when the button is clicked.
+        crossUI.onClick.AddListener(RemoveItem);
 
         // The slot is empty, toggle off everything.
         ToggleGUI(false);
-    }
-    private void TransferItem()
-    {
-
     }
 
     // Toggle the UI on and off.
     private void ToggleGUI(bool toggle)
     {
-        buttonUI.gameObject.SetActive(toggle);
         crossUI.gameObject.SetActive(toggle);
+        buttonUI.gameObject.SetActive(toggle);
         quantityUI.gameObject.SetActive(toggle);
     }
 
@@ -48,10 +41,8 @@ public class ItemSlot : MonoBehaviour
     }
 
     // Remove an item from the slot and the inventory.
-    public void RemoveItem(Item item)
+    public void RemoveItem()
     {
-        inventory.Remove(item.name);
-
         ToggleGUI(false);
         _quantity = 0;
     }
