@@ -22,11 +22,13 @@ public class Room
 
     public List<Vector2Int> NeighborCoord()
     {
-        List<Vector2Int> neighborCoordinates = new List<Vector2Int>();
-        neighborCoordinates.Add(new Vector2Int(this.roomCoord.x, this.roomCoord.y - 1));
-        neighborCoordinates.Add(new Vector2Int(this.roomCoord.x + 1, this.roomCoord.y));
-        neighborCoordinates.Add(new Vector2Int(this.roomCoord.x, this.roomCoord.y + 1));
-        neighborCoordinates.Add(new Vector2Int(this.roomCoord.x - 1, this.roomCoord.y));
+        List<Vector2Int> neighborCoordinates = new List<Vector2Int>
+        {
+            new Vector2Int(this.roomCoord.x, this.roomCoord.y - 1),
+            new Vector2Int(this.roomCoord.x + 1, this.roomCoord.y),
+            new Vector2Int(this.roomCoord.x, this.roomCoord.y + 1),
+            new Vector2Int(this.roomCoord.x - 1, this.roomCoord.y)
+        };
 
         return neighborCoordinates;
     }
@@ -35,21 +37,13 @@ public class Room
     {
         string direction = "";
         if (neighbor.roomCoord.y < this.roomCoord.y)
-        {
             direction = "N";
-        }
         if (neighbor.roomCoord.x > this.roomCoord.x)
-        {
             direction = "E";
-        }
         if (neighbor.roomCoord.y > this.roomCoord.y)
-        {
             direction = "S";
-        }
         if (neighbor.roomCoord.x < this.roomCoord.x)
-        {
             direction = "W";
-        }
         this.neighbors.Add(direction, neighbor);
     }
 }
