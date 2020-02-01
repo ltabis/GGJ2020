@@ -116,4 +116,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 1, y: 0, z: 0}
   speed: 5
-  lifeTime: 3
+  lifeTime: 1

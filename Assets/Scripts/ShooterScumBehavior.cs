@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShooterBehavior : AEntity
+public class ShooterScumBehavior : AEntity
 {
     private Transform target;
 
