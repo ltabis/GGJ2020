@@ -28,7 +28,7 @@ public class PlayerController : AEntity
         _shield = 100;
         _maxShield = 100;
         _energy = 100;
-        _maxEnergy = 100;
+        _maxEnergy = 200;
         _damage = 0;
         _range = 5;
         _speed = 5;

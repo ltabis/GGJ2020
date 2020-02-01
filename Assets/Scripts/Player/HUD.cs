@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class HUD : MonoBehaviour
 {
     // Bars.
-    public Image lifeBar;
-    public Image ShieldBar;
-    public Image EnergyBar;
+    public RawImage lifeBar;
+    public RawImage ShieldBar;
+    public RawImage EnergyBar;
 
     public Text lifeText;
     public Text ShieldText;
