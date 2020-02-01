@@ -13,7 +13,7 @@ public class PlayerController : AEntity
     public GameObject itemsParent;
 
     // All item slots.
-    private ItemSlot[] ItemSlotsUI;
+    private ItemSlot[] _itemSlotsUI;
 
     // Object detection.
     Ray ray;
@@ -26,7 +26,7 @@ public class PlayerController : AEntity
         _range = 5;
         _speed = 5;
 
-        ItemSlotsUI = itemsParent.GetComponentsInChildren<ItemSlot>();
+        _itemSlotsUI = itemsParent.GetComponentsInChildren<ItemSlot>();
     }
 
     // Update is called once per frame
@@ -82,13 +82,18 @@ public class PlayerController : AEntity
         // Getting an eventual object.
         var collider = ObjectOver();
 
-        if (Input.GetButton("Use") == true && collider)
-        {
-            Debug.Log("Using " + collider.name);
-        }
-        else if (collider)
+        if (collider)
         {
             var tmpInventory = collider.GetComponentInChildren<OtherInventory>();
+
+            if (Input.GetButtonDown("Use") == true)
+            {
+                var items = otherInventory.GetAllItems();
+                foreach (var item in items)
+                {
+                    inventory.Add(item.Item1, item.Item2);
+                }
+            }
 
             if (tmpInventory != null)
             {
@@ -114,9 +119,6 @@ public class PlayerController : AEntity
         if (Input.GetButtonDown("Inventory"))
         {
             DisplayInventory();
-        }
-        if (Input.GetButtonDown("Use"))
-        {
         }
     }
 }

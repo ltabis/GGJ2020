@@ -41,15 +41,14 @@ public class ItemSlot : MonoBehaviour
     // Add an item to the slot and the virtual inventory.
     public void AddItem(Item item, uint quantity)
     {
-        inventory.Add(item, _quantity + quantity);
-
         buttonUI.image.sprite = item.artwork;
         quantityUI.text = (_quantity + quantity).ToString();
+        _quantity += quantity;
         ToggleGUI(true);
     }
 
     // Remove an item from the slot and the inventory.
-    public void removeItem(Item item)
+    public void RemoveItem(Item item)
     {
         inventory.Remove(item.name);
 

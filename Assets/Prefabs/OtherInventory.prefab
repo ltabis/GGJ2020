@@ -222,6 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 5760457385533099448}
+  itemsParent: {fileID: 8259479631058971932}
   prefabList:
   - {fileID: 11400000, guid: 4ea926a1c769a464285f5f3e6703487e, type: 2}
   - {fileID: 11400000, guid: 5495efea247773e41b5a8dbdd9106637, type: 2}
@@ -234,7 +235,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2e917ffebac1531428b389be2905ab8a, type: 2}
   - {fileID: 11400000, guid: d83aee13c7cf30d41a127b87fba53850, type: 2}
   - {fileID: 11400000, guid: 4a3ccf166878fd148ad79103098a10c4, type: 2}
-  itemsParent: {fileID: 8259479631058971932}
 --- !u!1 &8259479631058971932
 GameObject:
   m_ObjectHideFlags: 0
