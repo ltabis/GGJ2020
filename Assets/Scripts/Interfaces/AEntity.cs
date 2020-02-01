@@ -37,7 +37,7 @@ abstract public class AEntity : MonoBehaviour
     public void TakeDamage(float amount)
     {
         if (_life <= amount)
-            Debug.Log("Entity " + gameObject.tag + " is dead.");
+            Destroy(gameObject);
         else
             _life -= amount;
     }
