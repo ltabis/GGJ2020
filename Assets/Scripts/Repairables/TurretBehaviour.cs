@@ -37,7 +37,6 @@ public class TurretBehaviour : ARepairable
     private void Shoot(GameObject target)
     {
         GameObject spawn = Instantiate(turret.bullet, gameObject.transform.position, gameObject.transform.rotation);
-        spawn.transform.SetParent(gameObject.transform);
         spawn.GetComponent<BulletBehaviour>().direction = target.transform.position - gameObject.transform.position;
     }
 
