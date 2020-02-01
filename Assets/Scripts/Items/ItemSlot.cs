@@ -43,7 +43,6 @@ public class ItemSlot : MonoBehaviour
     // Remove an item from the slot and the inventory.
     public void RemoveItem()
     {
-        Debug.Log("CALLBACK");
         ToggleGUI(false);
         _quantity = 0;
     }
