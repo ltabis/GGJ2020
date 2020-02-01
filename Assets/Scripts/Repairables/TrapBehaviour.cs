@@ -19,15 +19,14 @@ public class TrapBehaviour : ARepairable
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(collision.gameObject.name);
+        Debug.Log("collision");
         if (status == ReperableStatus.Repair)
         {
-            Debug.Log(collision.gameObject.name);
+            Debug.Log(other.gameObject.name);
             activated = true;
         }
-
     }
 
     private void Explode()
