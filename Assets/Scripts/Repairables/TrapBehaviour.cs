@@ -14,13 +14,12 @@ public class TrapBehaviour : ARepairable
     {
         if (activated)
         {
-            if (trap.cooldown <= 0)
-            {
-                Activation();
-                activated = false;
-            }
-            else
-                trap.cooldown -= Time.deltaTime;
+            Activation();
+        }
+        if (trap.cooldown >= 0)
+        {
+            trap.cooldown -= Time.deltaTime;
+
         }
     }
 
@@ -31,7 +30,7 @@ public class TrapBehaviour : ARepairable
         {
             InRadius.Add(other.gameObject);
         }
-        if (status == ReperableStatus.Using)
+        if (status == ReperableStatus.Using && trap.cooldown != 0)
         {
             activated = true;
         }

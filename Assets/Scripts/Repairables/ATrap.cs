@@ -9,6 +9,7 @@ public class ATrap : ScriptableObject
     public bool isPlayerSensible;
     public float damage = 5;
     public float cooldown = 5;
+    public float activationTime = 0;
 
     public Sprite destroySprite;
     public Sprite inRepaireSprite;
