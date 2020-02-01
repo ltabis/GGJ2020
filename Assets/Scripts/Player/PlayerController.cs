@@ -90,6 +90,8 @@ public class PlayerController : AEntity
         // Getting an eventual object.
         var collider = ObjectOver();
 
+        Debug.Log(collider == null ? "0" : "1");
+
         if (collider && collider.CompareTag("Treasure"))
         {
             var tmpInventory = collider.GetComponentInChildren<OtherInventory>();
@@ -113,6 +115,7 @@ public class PlayerController : AEntity
         }
         else if (collider && collider.CompareTag("Repairable"))
         {
+            Debug.Log("Trust me I'm an engineer");
             if (Input.GetButtonDown("Use") == true && scrap > 0)
             {
                 var repairable = collider.GetComponentInChildren<ARepairable>();

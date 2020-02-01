@@ -50,7 +50,7 @@ public class TrapBehaviour : ARepairable
             InRadius[i].GetComponent<AEntity>().TakeDamage(trap.damage);
         }
         status = ReperableStatus.Broken;
-//        activated = false;
+        activated = false;
         InRadius.Clear();
     }
 }
