@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShooterScumBehavior : AEntity
 {
-    private Transform target;
+    private GameObject target;
 
     // Start is called before the first frame update
     void Start()
@@ -23,14 +23,17 @@ public class ShooterScumBehavior : AEntity
 
     void IA()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
-        if (Vector3.Distance(target.position, transform.position) >= _range)
+        target = GameObject.FindGameObjectWithTag("Player");
+        if (target != null)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.position, _speed);
-        }
-        else
-        {
-            // shoot
+            if (Vector3.Distance(target.transform.position, transform.position) >= _range)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, target.transform.position, _speed);
+            }
+            else
+            {
+                // shoot
+            }
         }
     }
 }

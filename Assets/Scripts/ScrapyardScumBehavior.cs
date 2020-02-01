@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScrapyardScumBehavior : AEntity
 {
-    private Transform target;
+    private GameObject target;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,8 @@ public class ScrapyardScumBehavior : AEntity
 
     void IA()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
-        transform.position = Vector3.MoveTowards(transform.position, target.position, _speed);
+        target = GameObject.FindGameObjectWithTag("Player");
+        if (target != null)
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, _speed);
     }
 }
