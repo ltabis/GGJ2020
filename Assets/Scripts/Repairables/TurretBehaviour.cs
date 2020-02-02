@@ -8,6 +8,8 @@ public class TurretBehaviour : ARepairable
 
     public ATurret turret;
 
+    public AudioSource audio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,7 @@ public class TurretBehaviour : ARepairable
     // Spwan munition gameObject
     private void Shoot(GameObject target)
     {
+        audio.Play();
         GameObject spawn = Instantiate(turret.bullet, gameObject.transform.position, gameObject.transform.rotation);
         spawn.GetComponent<BulletBehaviour>().direction = target.transform.position - gameObject.transform.position;
     }
