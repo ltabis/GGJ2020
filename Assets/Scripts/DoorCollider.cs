@@ -20,7 +20,7 @@ public class DoorCollider : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            string roomName = "room" + (int)Random.Range(0, 1);
+            string roomName = "room" + (int)Random.Range(0, 6);
             collision.gameObject.transform.position = new Vector3(0, 0, 0);
 
             GameObject dungeon = GameObject.FindGameObjectWithTag("Dungeon");
