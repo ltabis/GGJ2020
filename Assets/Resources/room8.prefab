@@ -8874,9 +8874,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bfaaa02d793ce04cbd139ac8ddbd5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaveNbr: 2
+  WaveNbr: 5
   inDanger: 0
-  calmTime: 3
+  calmTime: 15
 --- !u!1 &6614560882595473501
 GameObject:
   m_ObjectHideFlags: 0
