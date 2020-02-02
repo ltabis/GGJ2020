@@ -9,6 +9,8 @@ public class TrapBehaviour : ARepairable
 
     private List<GameObject> InRadius = new List<GameObject>();
 
+    public AudioSource audio;
+
     // Update is called once per frame
     void Update()
     {
@@ -45,6 +47,7 @@ public class TrapBehaviour : ARepairable
 
     private void Activation()
     {
+        audio.Play();
         for (int i = 0; i < InRadius.Count; i++)
         {
             bool isPlayer = false;
