@@ -597,6 +597,31 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3701530579931506333, guid: 04de5b766f4cac2449fd81e6dc8bbb2e,
+        type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3701530579931506333, guid: 04de5b766f4cac2449fd81e6dc8bbb2e,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.24705884
+      objectReference: {fileID: 0}
+    - target: {fileID: 3701530579931506333, guid: 04de5b766f4cac2449fd81e6dc8bbb2e,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3701530579931506333, guid: 04de5b766f4cac2449fd81e6dc8bbb2e,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.4431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 3701530579931506333, guid: 04de5b766f4cac2449fd81e6dc8bbb2e,
+        type: 3}
+      propertyPath: m_BackGroundColor.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3996783582361946402, guid: 04de5b766f4cac2449fd81e6dc8bbb2e,
         type: 3}
       propertyPath: m_AnchorMin.y
