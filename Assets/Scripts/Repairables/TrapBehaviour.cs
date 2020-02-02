@@ -15,6 +15,7 @@ public class TrapBehaviour : ARepairable
         if (activated)
         {
             Activation();
+            activated = false;
         }
         if (trap.cooldown > 0)
         {
@@ -46,10 +47,14 @@ public class TrapBehaviour : ARepairable
     {
         for (int i = 0; i < InRadius.Count; i++)
         {
+            bool isPlayer = false;
+            if (InRadius[i] && InRadius[i].tag == "Player")
+                isPlayer = true;
             InRadius[i].GetComponent<AEntity>().TakeDamage(trap.damage);
+            if (isPlayer)
+                GameObject.FindObjectOfType<HUD>().OnUpdate();
         }
         status = ReperableStatus.Broken;
-        activated = false;
         InRadius.Clear();
     }
 }

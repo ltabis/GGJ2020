@@ -7,6 +7,9 @@ public class ShooterScumBehavior : AEntity
     private GameObject target;
     public GameObject bullet;
 
+    public float cooldown = 1;
+    public float timeWait = 0;
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,14 +37,21 @@ public class ShooterScumBehavior : AEntity
             }
             else
             {
-                Shoot(target);
+                timeWait += Time.deltaTime;
+                if (timeWait >= cooldown)
+                {
+                    Shoot(target);
+                    timeWait = 0;
+                }
             }
         }
     }
 
     private void Shoot(GameObject target)
     {
-        GameObject spawn = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
+        Vector3 pos = gameObject.transform.position * 1.2f;
+        GameObject spawn = Instantiate(bullet, pos, gameObject.transform.rotation);
         spawn.GetComponent<BulletBehaviour>().direction = target.transform.position - gameObject.transform.position;
+        spawn.GetComponent<BulletBehaviour>().setSender(gameObject);
     }
 }

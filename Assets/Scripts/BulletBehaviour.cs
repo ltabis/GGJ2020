@@ -8,6 +8,7 @@ public class BulletBehaviour : MonoBehaviour
     public float speed = 1;
     public float lifeTime = 3;
     public float damage = 1;
+    private GameObject sender;
 
     // Start is called before the first frame update
     void Start()
@@ -27,8 +28,14 @@ public class BulletBehaviour : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Enemy")
         {
-            collision.gameObject.GetComponent<AEntity>().TakeDamage(damage);
+            if (sender == null || collision.gameObject != sender)
+                collision.gameObject.GetComponent<AEntity>().TakeDamage(damage);
         }
         Destroy(gameObject);
+    }
+
+    public void setSender(GameObject go)
+    {
+        sender = go;
     }
 }
