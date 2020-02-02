@@ -108,27 +108,28 @@ public class PlayerController : AEntity
         }
         else if (collider && collider.CompareTag("Repairable"))
         {
-            if (Input.GetButtonDown("Use") == true && scrap > 0)
+            if (Input.GetButtonDown("Use") == true)
             {
                 var repairable = collider.GetComponentInChildren<ARepairable>();
 
-                if (repairable.Status() == ReperableStatus.Broken || repairable.Status() == ReperableStatus.Repairing)
+                // Check if the player can repair the object.
+                if ((repairable.Status() == ReperableStatus.Broken || repairable.Status() == ReperableStatus.Repairing) && scrap > 0)
                 {
                     repairable.Repair(1, _energy);
                     scrap -= 1;
                 }
                 else
                 {
-                    float energyCost = repairable.Repair(1, _energy);
-
-                    _energy += energyCost;
+                    // Remove or add energy.
+                    _energy += repairable.Repair(1, _energy);
                 }
-                hud.OnUpdate();
             }
 
         }
         else if (otherInventory != null)
             otherInventory.ToggleInventory(false);
+        // update the hud.
+        hud.OnUpdate();
     }
 
     private void DisplayInventory()

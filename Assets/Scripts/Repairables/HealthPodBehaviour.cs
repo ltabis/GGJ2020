@@ -2,13 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PostBehaviour : ARepairable
+public class HealthPodBehaviour : ARepairable
 {
-    public bool activated = false;
-    public float energy = 50;
     public ATrap trap;
 
-    // Update is called once per frame
     void Update()
     {
         if (status == ReperableStatus.Using)
@@ -17,7 +14,7 @@ public class PostBehaviour : ARepairable
 
             if (controller)
             {
-                controller.AddEnergy(50);
+                controller.AddLife(20);
                 status = ReperableStatus.Unusable;
             }
         }
