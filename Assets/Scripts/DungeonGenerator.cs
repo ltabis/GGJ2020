@@ -53,14 +53,16 @@ public class DungeonGenerator : MonoBehaviour
     [SerializeField]
     private int nbRoom = 0;
     private Room[,] rooms;
+    public GameObject roomObject;
+    public Room currentRoom;
 
     // Start is called before the first frame update
     void Start()
     {
-        Room currentRoom = GenerateDungeon();
+        this.currentRoom = GenerateDungeon();
         //PrintGrid();
-        string roomName = "room" + (int)Random.Range(0, 5);
-        GameObject roomObject = (GameObject)Instantiate(Resources.Load(roomName));
+        string roomName = "room" + (int)Random.Range(0, 1);
+        roomObject = (GameObject)Instantiate(Resources.Load(roomName));
     }
 
     // Update is called once per frame
