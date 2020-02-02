@@ -11,6 +11,7 @@ public class PlayerController : AEntity
     public Inventory inventory;
     private OtherInventory otherInventory = null;
     private bool _isInventoryOpen = false;
+    private bool dead = false;
 
     // Parent of slots
     public GameObject itemsParent;
@@ -43,6 +44,12 @@ public class PlayerController : AEntity
         }
         Interactions();
         PlayerInput();
+    }
+
+    private void OnDestroy()
+    {
+        if (_life == 0)
+            GameObject.Find("HUD").GetComponent<HUD>().PrintDeath();
     }
 
     // Handles movements from the player.
