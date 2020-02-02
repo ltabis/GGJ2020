@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HUD : MonoBehaviour
 {
@@ -33,6 +34,6 @@ public class HUD : MonoBehaviour
 
     public void PrintDeath()
     {
-        Debug.Log("Vous êtes mort !");
+        SceneManager.LoadScene("DeathScene");
     }
 }
