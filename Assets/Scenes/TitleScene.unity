@@ -528,7 +528,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Repair Dungeon
+  m_text: Dump Slayer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8b2c0a67a19b948459759669fa16dbc4, type: 2}
   m_sharedMaterial: {fileID: -6265733669725360944, guid: 8b2c0a67a19b948459759669fa16dbc4,
@@ -598,7 +598,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 913315886}
-    characterCount: 14
+    characterCount: 11
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
@@ -917,7 +917,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cfa64c01a4a3874429309386a4d9b56b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1b2101dee3529584585509873dcda93a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
