@@ -24,7 +24,7 @@ public class PostBehaviour : ARepairable
         canvas = StatusUI.GetComponent<RectTransform>();
 
         // Not great.
-        image = GameObject.Find("ImageStatusUI").GetComponent<RectTransform>();
+        image = transform.GetChild(0).transform.GetChild(0).GetComponent<RectTransform>();
 
         // Computing offset.
         uiOffset = new Vector2(canvas.sizeDelta.x / 2f, canvas.sizeDelta.y / 2f);
