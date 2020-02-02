@@ -20,12 +20,12 @@ public class DoorCollider : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            string roomName = "room" + (int)Random.Range(0, 8);
+            string roomName = "room" + (int)Random.Range(0, 1);
+            GameObject.Instantiate(Resources.Load(roomName));
             collision.gameObject.transform.position = new Vector3(0, 0, 0);
+
             GameObject dungeon = GameObject.FindGameObjectWithTag("Dungeon");
             DungeonGenerator generator = dungeon.GetComponent<DungeonGenerator>();
-//            if (generator.currentRoom.neighbors)
-            GameObject.Instantiate(Resources.Load(roomName));
             Destroy(generator.roomObject);
         }
     }
