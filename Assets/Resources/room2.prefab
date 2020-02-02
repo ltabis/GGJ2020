@@ -875,7 +875,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -1083,7 +1083,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -1103,7 +1103,6 @@ GameObject:
   - component: {fileID: 7492022241186724407}
   - component: {fileID: 8229251003636795220}
   - component: {fileID: 6345279919767383107}
-  - component: {fileID: 5386025857078502358}
   m_Layer: 0
   m_Name: Door1 (1)
   m_TagString: Untagged
@@ -1146,10 +1145,10 @@ Tilemap:
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: d01be0f7855bb44488591338a7a477be, type: 2}
+    m_Data: {fileID: 11400000, guid: d8994b07028c2e644b4e2211c8d09158, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: 4afec05bf60fbcf42af394ac07c27b3c, type: 3}
+    m_Data: {fileID: 21300000, guid: a3326bf634b1e7247a772abb6c65453c, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 1
     m_Data:
@@ -1232,7 +1231,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -1241,22 +1240,6 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!19719996 &5386025857078502358
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614936672321708085}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!1 &4461677172349999065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,7 +1251,6 @@ GameObject:
   - component: {fileID: 3061444075266386456}
   - component: {fileID: 7496623037683548904}
   - component: {fileID: 5904073948250317110}
-  - component: {fileID: 8856306964299859185}
   m_Layer: 0
   m_Name: Door1 (2)
   m_TagString: Untagged
@@ -1311,10 +1293,10 @@ Tilemap:
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: d01be0f7855bb44488591338a7a477be, type: 2}
+    m_Data: {fileID: 11400000, guid: 3fdec9f9fbd747e4f823c47a8f9f1071, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: 4afec05bf60fbcf42af394ac07c27b3c, type: 3}
+    m_Data: {fileID: 21300000, guid: 4a3664bbff0baa14e8b0ae8a65bf0e36, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 1
     m_Data:
@@ -1397,7 +1379,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -1406,22 +1388,6 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!19719996 &8856306964299859185
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4461677172349999065}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!1 &5583547534860858044
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,7 +1399,6 @@ GameObject:
   - component: {fileID: 6276829474598917693}
   - component: {fileID: 362688137250120383}
   - component: {fileID: 8656333341295546888}
-  - component: {fileID: 5709813647873911606}
   m_Layer: 0
   m_Name: Door1
   m_TagString: Untagged
@@ -1476,10 +1441,10 @@ Tilemap:
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: d01be0f7855bb44488591338a7a477be, type: 2}
+    m_Data: {fileID: 11400000, guid: d8994b07028c2e644b4e2211c8d09158, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: 4afec05bf60fbcf42af394ac07c27b3c, type: 3}
+    m_Data: {fileID: 21300000, guid: a3326bf634b1e7247a772abb6c65453c, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 1
     m_Data:
@@ -1562,7 +1527,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -1571,22 +1536,6 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!19719996 &5709813647873911606
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5583547534860858044}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!1 &7163084111565146750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1598,7 +1547,6 @@ GameObject:
   - component: {fileID: 1908839330267954294}
   - component: {fileID: 4988321273389803303}
   - component: {fileID: 2530457139741342853}
-  - component: {fileID: 2969759784971973928}
   m_Layer: 0
   m_Name: Holes
   m_TagString: Untagged
@@ -1880,7 +1828,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -1889,22 +1837,6 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!19719996 &2969759784971973928
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7163084111565146750}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!1 &7952113443792782079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1978,6 +1910,7 @@ MonoBehaviour:
   WaveNbr: 1
   inDanger: 0
   calmTime: 10
+  level: 1
 --- !u!1 &7952113445123557389
 GameObject:
   m_ObjectHideFlags: 0
@@ -6169,7 +6102,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
