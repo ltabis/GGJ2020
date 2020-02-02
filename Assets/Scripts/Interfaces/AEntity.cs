@@ -14,6 +14,22 @@ abstract public class AEntity : MonoBehaviour
     protected float _damage = 0;
     protected float _range = 0;
 
+    public void AddLife(float amount)
+    {
+        if (_life + amount <= _maxLife)
+            _life += amount;
+    }
+    public void AddShield(float amount)
+    {
+        if (_shield + amount <= _maxShield)
+            _shield += amount;
+    }
+    public void AddEnergy(float amount)
+    {
+        if (_energy + amount <= _maxEnergy)
+            _energy += amount;
+    }
+
     // Get the life points of the entity.
     public float Life()
     {
