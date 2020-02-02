@@ -90,7 +90,7 @@ public class PlayerController : AEntity
         // Getting an eventual object.
         var collider = ObjectOver();
 
-        Debug.Log(collider == null ? "0" : "1");
+//        Debug.Log(collider == null ? "0" : "1");
 
         if (collider && collider.CompareTag("Treasure"))
         {
