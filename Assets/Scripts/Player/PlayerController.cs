@@ -17,10 +17,6 @@ public class PlayerController : AEntity
 
     public uint scrap = 50;
 
-    // Object detection.
-    Ray ray;
-    RaycastHit hit;
-
     private void Start()
     {
         _life = 100;
@@ -72,12 +68,11 @@ public class PlayerController : AEntity
     }
 
     // Mouse over objects.
-    private Collider ObjectOver()
+    private Collider2D ObjectOver()
     {
-        // Get the current mouse position.
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
-        if (Physics.Raycast(ray, out hit))
+        if (hit)
         {
             return hit.collider;
         }
@@ -117,8 +112,18 @@ public class PlayerController : AEntity
             {
                 var repairable = collider.GetComponentInChildren<ARepairable>();
 
-                repairable.Repair(1);
-                scrap -= 1;
+                if (repairable.Status() == ReperableStatus.Broken || repairable.Status() == ReperableStatus.Repairing)
+                {
+                    repairable.Repair(1, _energy);
+                    scrap -= 1;
+                }
+                else
+                {
+                    float energyCost = repairable.Repair(1, _energy);
+
+                    _energy += energyCost;
+                    Debug.Log("ernegy: " + _energy);
+                }
                 hud.OnUpdate();
             }
 

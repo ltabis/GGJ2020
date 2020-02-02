@@ -7,6 +7,7 @@ public class BulletBehaviour : MonoBehaviour
     public Vector3 direction = new Vector3(1, 0, 0);
     public float speed = 1;
     public float lifeTime = 3;
+    public float damage = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -20,5 +21,14 @@ public class BulletBehaviour : MonoBehaviour
         lifeTime -= Time.deltaTime;
         if (lifeTime <= 0)
             Destroy(gameObject);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Enemy")
+        {
+            collision.gameObject.GetComponent<AEntity>().TakeDamage(damage);
+        }
+        Destroy(gameObject);
     }
 }

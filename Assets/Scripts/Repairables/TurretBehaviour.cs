@@ -11,7 +11,7 @@ public class TurretBehaviour : ARepairable
     // Start is called before the first frame update
     void Start()
     {
-
+        energyCost = 50;
     }
 
     // Update is called once per frame

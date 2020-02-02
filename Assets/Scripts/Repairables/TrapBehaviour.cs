@@ -46,11 +46,10 @@ public class TrapBehaviour : ARepairable
     {
         for (int i = 0; i < InRadius.Count; i++)
         {
-            Debug.Log("Damaged : " + InRadius[i].name);
             InRadius[i].GetComponent<AEntity>().TakeDamage(trap.damage);
         }
         status = ReperableStatus.Broken;
-//        activated = false;
+        activated = false;
         InRadius.Clear();
     }
 }
