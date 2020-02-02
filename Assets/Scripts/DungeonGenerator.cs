@@ -61,8 +61,8 @@ public class DungeonGenerator : MonoBehaviour
     {
         this.currentRoom = GenerateDungeon();
         //PrintGrid();
-        string roomName = "room" + (int)Random.Range(0, 1);
-        roomObject = (GameObject)Instantiate(Resources.Load(roomName));
+        string roomName = "room" + (int)Random.Range(0, 8);
+        GameObject roomObject = (GameObject)Instantiate(Resources.Load(roomName));
     }
 
     // Update is called once per frame
