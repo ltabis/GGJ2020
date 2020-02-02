@@ -18,16 +18,22 @@ abstract public class AEntity : MonoBehaviour
     {
         if (_life + amount <= _maxLife)
             _life += amount;
+        else
+            _life = _maxLife;
     }
     public void AddShield(float amount)
     {
         if (_shield + amount <= _maxShield)
             _shield += amount;
+        else
+            _shield = _maxShield;
     }
     public void AddEnergy(float amount)
     {
         if (_energy + amount <= _maxEnergy)
             _energy += amount;
+        else
+            _energy = _maxEnergy;
     }
 
     // Get the life points of the entity.
