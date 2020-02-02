@@ -31,7 +31,8 @@ public class BulletBehaviour : MonoBehaviour
             if (sender == null || collision.gameObject != sender)
                 collision.gameObject.GetComponent<AEntity>().TakeDamage(damage);
         }
-        Destroy(gameObject);
+        if (collision.gameObject != sender)
+            Destroy(gameObject);
     }
 
     public void setSender(GameObject go)
