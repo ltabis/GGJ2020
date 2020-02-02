@@ -17,10 +17,6 @@ public class PlayerController : AEntity
 
     public uint scrap = 50;
 
-    // Object detection.
-    Ray ray;
-    RaycastHit hit;
-
     private void Start()
     {
         _life = 100;
@@ -72,12 +68,11 @@ public class PlayerController : AEntity
     }
 
     // Mouse over objects.
-    private Collider ObjectOver()
+    private Collider2D ObjectOver()
     {
-        // Get the current mouse position.
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
-        if (Physics.Raycast(ray, out hit))
+        if (hit)
         {
             return hit.collider;
         }
@@ -89,8 +84,6 @@ public class PlayerController : AEntity
     {
         // Getting an eventual object.
         var collider = ObjectOver();
-
-        Debug.Log(collider == null ? "0" : "1");
 
         if (collider && collider.CompareTag("Treasure"))
         {
