@@ -108,13 +108,22 @@ public class PlayerController : AEntity
         }
         else if (collider && collider.CompareTag("Repairable"))
         {
-            Debug.Log("Trust me I'm an engineer");
             if (Input.GetButtonDown("Use") == true && scrap > 0)
             {
                 var repairable = collider.GetComponentInChildren<ARepairable>();
 
-                repairable.Repair(1);
-                scrap -= 1;
+                if (repairable.Status() == ReperableStatus.Broken || repairable.Status() == ReperableStatus.Repairing)
+                {
+                    repairable.Repair(1, _energy);
+                    scrap -= 1;
+                }
+                else
+                {
+                    float energyCost = repairable.Repair(1, _energy);
+
+                    _energy += energyCost;
+                    Debug.Log("ernegy: " + _energy);
+                }
                 hud.OnUpdate();
             }
 
