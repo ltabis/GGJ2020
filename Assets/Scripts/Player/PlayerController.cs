@@ -48,7 +48,8 @@ public class PlayerController : AEntity
 
     private void OnDestroy()
     {
-        GameObject.Find("HUD").GetComponent<HUD>().PrintDeath();
+        if (_life == 0)
+            GameObject.Find("HUD").GetComponent<HUD>().PrintDeath();
     }
 
     // Handles movements from the player.
