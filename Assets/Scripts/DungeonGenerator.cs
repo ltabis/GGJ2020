@@ -59,8 +59,7 @@ public class DungeonGenerator : MonoBehaviour
     {
         Room currentRoom = GenerateDungeon();
         //PrintGrid();
-        string roomName = "room2";
-//        string roomName = "room" + (int)Random.Range(0, 5);
+        string roomName = "room" + (int)Random.Range(0, 8);
         GameObject roomObject = (GameObject)Instantiate(Resources.Load(roomName));
     }
 
