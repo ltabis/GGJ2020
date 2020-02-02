@@ -9,7 +9,7 @@ public class ScrapyardScumBehavior : AEntity
     public float stunning = 1;
     private float currentStunning;
 
-    private float hitCooldown = 0.2f;
+    [SerializeField] readonly private float hitCooldown = 0.2f;
     private float lastHitTime = 0;
 
     // Start is called before the first frame update

@@ -5,6 +5,8 @@ using UnityEngine;
 public class ShooterScumBehavior : AEntity
 {
     private GameObject target;
+    public GameObject bullet;
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,8 +34,14 @@ public class ShooterScumBehavior : AEntity
             }
             else
             {
-                // shoot
+                Shoot(target);
             }
         }
+    }
+
+    private void Shoot(GameObject target)
+    {
+        GameObject spawn = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
+        spawn.GetComponent<BulletBehaviour>().direction = target.transform.position - gameObject.transform.position;
     }
 }
