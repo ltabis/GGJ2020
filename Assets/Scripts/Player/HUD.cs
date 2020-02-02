@@ -30,4 +30,9 @@ public class HUD : MonoBehaviour
         EnergyText.text = controller.Energy() + " / " + controller.MaxEnergy();
         ScrapText.text = controller.scrap.ToString();
     }
+
+    public void PrintDeath()
+    {
+        Debug.Log("Vous êtes mort !");
+    }
 }
