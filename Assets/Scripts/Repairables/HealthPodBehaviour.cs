@@ -6,6 +6,8 @@ public class HealthPodBehaviour : ARepairable
 {
     public ATrap trap;
 
+    public AudioSource sound;
+
     void Update()
     {
         if (status == ReperableStatus.Using)
@@ -14,6 +16,7 @@ public class HealthPodBehaviour : ARepairable
 
             if (controller)
             {
+                sound.Play();
                 controller.AddLife(20);
                 status = ReperableStatus.Unusable;
             }

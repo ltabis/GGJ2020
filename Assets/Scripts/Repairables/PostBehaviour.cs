@@ -8,6 +8,7 @@ public class PostBehaviour : ARepairable
     public bool activated = false;
     public float energy = 50;
     public ATrap trap;
+    public AudioSource sound;
 
     public GameObject StatusUI;
 
@@ -40,6 +41,7 @@ public class PostBehaviour : ARepairable
 
             if (controller)
             {
+                sound.Play();
                 controller.AddEnergy(50);
                 status = ReperableStatus.Unusable;
             }
