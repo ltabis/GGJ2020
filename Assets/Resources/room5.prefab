@@ -41,8 +41,6 @@ Tilemap:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5662672612234504179}
   m_Enabled: 1
-  m_Tiles:
-  - first: {x: -4, y: -4, z: 0}
     second:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
