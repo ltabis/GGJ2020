@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum ReperableStatus
 {
-    Broken, Repairing, Using, Unused
+    Broken, Repairing, Using, Unused, Unusable
 };
 
 public class ARepairable : MonoBehaviour
@@ -15,6 +15,8 @@ public class ARepairable : MonoBehaviour
 
     public float Repair(float value, float energy)
     {
+        if (status == ReperableStatus.Unusable)
+            return 0;
         // Starting to repair
         if (status == ReperableStatus.Broken)
         {
