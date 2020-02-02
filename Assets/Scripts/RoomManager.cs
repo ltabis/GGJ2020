@@ -7,6 +7,7 @@ public class RoomManager : MonoBehaviour
     public int WaveNbr = 1;
     public bool inDanger = false;
     public float calmTime = 10;
+    public int level = 1;
 
     private float currentCalmTime;
     private int currentWave = 0;
@@ -26,16 +27,18 @@ public class RoomManager : MonoBehaviour
             currentCalmTime -= Time.deltaTime;
         if (currentCalmTime <= 0 && currentWave < WaveNbr)
         {
-            Debug.Log("Wave incomming");
             currentWave += 1;
-            SpawnWave(3);
+            SpawnWave(currentWave * level + 3);
+            currentCalmTime = calmTime;
         }
     }
 
     private void SpawnWave(int level)
     {
-        int spawnerNbr = (int)Random.Range(0, spawners.Length);
-        Debug.Log("Spawn on : " + spawners[spawnerNbr].name);
-        spawners[spawnerNbr].GetComponent<MobSpawnerBehaviour>().Spawn();
+        for (int i = 0; i < level; i++)
+        {
+            int spawnerNbr = (int)Random.Range(0, spawners.Length);
+            spawners[spawnerNbr].GetComponent<MobSpawnerBehaviour>().Spawn();
+        }
     }
 }
