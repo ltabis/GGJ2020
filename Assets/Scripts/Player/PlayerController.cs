@@ -122,7 +122,6 @@ public class PlayerController : AEntity
                     float energyCost = repairable.Repair(1, _energy);
 
                     _energy += energyCost;
-                    Debug.Log("ernegy: " + _energy);
                 }
                 hud.OnUpdate();
             }
