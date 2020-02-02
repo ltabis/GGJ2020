@@ -17,6 +17,6 @@ MonoBehaviour:
   damage: 20
   cooldown: 0
   activationTime: 0.5
-  destroySprite: {fileID: 0}
-  inRepaireSprite: {fileID: 0}
-  repaireSprite: {fileID: 0}
+  destroySprite: {fileID: 21300000, guid: c30ee8b907bf18445852c0c5593a296d, type: 3}
+  inRepaireSprite: {fileID: 21300000, guid: 47f88dde58dcbec428da1fd15c635870, type: 3}
+  repaireSprite: {fileID: 21300000, guid: f333baf16f10314488c285cde7cfee36, type: 3}
